@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+a, a:visited{
+    text-decoration: none;
+    color: black;
+}
+html{
+    height: auto;
+    scroll-behavior: smooth;
+}
+body{
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #976EE7;
+}
+.navBar{
+    z-index: 999;
+    position: sticky;
+    top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    .navEl{
+        font-size:  1.5rem;
+        font-weight: 900;
+        cursor: pointer;
+    }
+    .navEl a:hover{
+        color: white;
+    }
+}
+.wrapper{
+    width: 55%;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    height: auto;
+    .home{
+        margin-bottom: 1rem;
+        height: 100vh;
+        .title{
+            font-weight: 900;
+            font-size: 10rem;
+        }
+        .titleDesc{
+            font-weight: 800;
+            color: white;
+            font-size: 2.5rem;
+        }
+        .intro{
+            width: 70%;
+            margin-top: 3rem;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #2C0085;
+        }
+        .madeByEL{
+            margin-top: 13rem;
+            display: flex;
+            color: black;
+            .dateLine{
+                margin-top: -5px;
+                border-bottom: 1px solid black;
+                flex-grow: 1;
+            }
+        }
+    }
+    .about{
+        height: 100vh;
+        .aboutTitle{
+            padding-top: 8rem;
+            font-weight: 900;
+            font-size: 10rem;
+        }
+        .aboutTitleDesc{
+            font-weight: 800;
+            color: white;
+            font-size: 2.5rem;
+        }
+        .aboutIntro{
+            font-weight: 700;
+            font-size: 1.75rem;
+            color: #2C0085;
+            overflow: auto;
+        }
+        .madeByEL{
+            margin-top: 8rem;
+            display: flex;
+            color: black;
+            .dateLine{
+                margin-top: -5px;
+                border-bottom: 1px solid black;
+                flex-grow: 1;
+            }
+        }
+    }
+    .projects{
+        height: auto;
+        margin-bottom: 10rem;
+        .projectTitle{
+            font-weight: 900;
+            font-size: 10rem;
+            padding-top: 5rem;
+        }
+        .projectDesc{
+            font-weight: 800;
+            color: white;
+            font-size: 2.5rem;
+        }
+        .dateLine{
+            margin-top: 3rem;
+            border-bottom: 1px solid black;
+            flex-grow: 1;
+        }
+        .proj{
+            margin-top: 4rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .projTitle{
+                margin-left: 4rem;
+                font-size: 3rem;
+                font-weight: 800;
+            }
+            .everythingElse{
+                display: flex;
+            }
+            .techUsed{
+                display: flex;
+                font-size: 2.5rem;
+                gap: 10px;
+                align-items: center;
+            }
+            .techUsed .fa-react {
+                color: black;
+              }
+              
+              .techUsed .fa-react:hover {
+                color: #61DBFB;
+              }
+              
+              .techUsed .fa-html5 {
+                color: black;
+              }
+              
+              .techUsed .fa-html5:hover {
+                color: #e34c26;
+              }
+              
+              .techUsed .fa-css3-alt {
+                color: black;
+              }
+              
+              .techUsed .fa-css3-alt:hover {
+                color: #264de4;
+              }
+              
+              .techUsed .fa-square.js {
+                color: black;
+              }
+              
+              .techUsed .fa-square-js:hover {
+                color: #F0DB4F;
+              }
+            .projImg{
+                filter: sepia(50%);
+                margin-left: 1rem;
+                border-radius: 25px;
+                width: 600px;
+                height: 375px;
+                object-fit: cover;
+                transition: box-shadow .5s, filter .5s;
+                -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+            }
+            .projImg:hover{
+                filter: sepia(0);
+                -webkit-box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.75);
+                box-shadow: -10px 10px 0px 0px rgba(0,0,0,0.75);
+            }
+            .projDesc{
+                margin-left: 1.9rem;
+                color: #2C0085;
+                font-weight: 700;
+            }
+        }
+        .clientProj{
+            margin-top: 3rem;
+            font-weight: 800;
+            color: white;
+            font-size: 2.5rem;
+        }
+    }
+    
+}
+.contact{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    background-color: #8153dd;
+    .contactWrapper{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 55%;
+        .contactItem{
+            font-weight: 500;
+            width: fit-content;
+        }
+        .contactItem:hover{
+            color: white;
+            cursor: pointer;
+            
+        }
+    }
+    .contactLinks{
+        text-align: right;
+        .contactLink{
+            font-weight: 500;
+            align-self: flex-end;
+        }
+        .contactLink:hover{
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (min-width: 1630px){
+    .techUsed{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1015px){
+    .navBar{
+        width: 80%;
+        .navEl{
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    }
+    .wrapper{
+        width: 90%;
+        .home{
+            height: 100vh;
+            .title{
+                margin-top: 6rem;
+                font-size: 6rem;
+                line-height: 80px;
+            }
+            .titleDesc{
+                font-size: 2.25rem;
+            }
+            .intro{
+                display: none;
+            }
+            .madeByEL{
+                margin-top: 10rem;
+            }
+        }
+        .about{
+            .aboutTitle{
+                font-size: 6rem;
+                margin-bottom: 1rem;
+            }
+            .aboutIntro{
+                font-size: 1rem;
+            }
+        }
+        .projects{
+            .projectTitle{
+                font-size: 5.8rem;
+            }
+            .proj{
+                .projTitle{
+                    margin: 0 auto;
+                }
+                .projImg{
+                    margin: 0 auto 1rem;
+                    width: 375px;
+                    height: 225px;
+                }
+                .projDesc{
+                    width: 90%;
+                    margin-left: 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    .contact{
+        .contactWrapper{
+            width: 90%;
+            .contactMe{
+                .contactMeTitle{
+                    font-size: 1.3rem;
+                    margin-bottom: .5rem;
+                }
+                .contactItem{
+                    font-size: 1rem;  
+                }
+            }
+            .contactLinks{
+                .contactMeTitle{
+                    font-size: 1.3rem;
+                    margin-bottom: .5rem
+                }
+                .contactLink{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 1630px) {
+    .nav{
+        gap: 10px;
+    }
+    .proj{
+        display: flex;
+        flex-direction: column;
+        .projTitle{
+            text-align: center;
+        }
+        .techUsed{
+            width: 50%;
+            margin: 1rem auto;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: row;
+        }
+        .everythingElse{
+            display: flex;
+            flex-direction: column;
+        }
+        .anchorClass{
+            align-self: center;
+
+        }
+        .projDesc{
+            width: 80%;
+           align-self: center;
+
+           text-align: center;
+           font-weight: 600;
+           font-size: 1.30rem;
+        }
+    }
+  }
