@@ -238,7 +238,7 @@ body{
         flex-direction: column;
     }
 }
-@media screen and (max-width: 1015px){
+@media screen and (max-width: 600px){
     .navBar{
         width: 80%;
         .navEl{
