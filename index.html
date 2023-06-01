@@ -1,120 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-      </style>
-    <script src="https://kit.fontawesome.com/73414ee9c2.js" crossorigin="anonymous"></script>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/73414ee9c2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>PortfolioV7</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="navBar">
-        <h1 class="navEl"><a href="#about">About</a></h1>
-        <h1 class="navEl"><a href="#projects">Projects</a></h1>
-        <h1 class="navEl"><a href="#contact">Contact</a></h1>
+      <h1 class="navEl"><a href="#about">About</a></h1>
+      <h1 class="navEl"><a href="#projects">Projects</a></h1>
+      <h1 class="navEl"><a href="#contact">Contact</a></h1>
     </div>
     <div class="wrapper">
-        <div class="home">
-            <h1 class="title">Het Patel <i class="fa-solid fa-code-branch"></i></h1>
-            <h1 class="titleDesc">A Full Stack Developer.</h1>
-            <p class="intro">Im an aspiring software engineer, currently studying Computer Science at Binghamton University.
-                 I figured I needed a website to show off my stuff, feel free to look around!
+      <div class="home">
+        <h1 class="title">Het Patel <i class="fa-solid fa-code-branch"></i></h1>
+        <h1 class="titleDesc">A Full Stack Developer.</h1>
+        <p class="intro">
+          Im an aspiring software engineer, currently studying Computer Science
+          at Binghamton University. I figured I needed a website to show off my
+          stuff, feel free to look around!
+        </p>
+        <div class="madeByEL">
+          <h2>Mar 22, 2023</h2>
+          <p class="dateLine"></p>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <div class="aboutTitle">About <i class="fa-solid fa-coffee"></i></div>
+        <div class="aboutTitleDesc">What It's All About.</div>
+        <p class="aboutIntro">
+          First off, im a huge nerd. I love watching horror, sci-fi, playing
+          video games, working out, and eating hot cheetos. But, more than
+          anything, I love coding. Whether that be making websites like this
+          one, video games, or impractical applications ill never actually use,
+          its by far my favorite passtime. Its something I look forward to doing
+          for a living in the future. Currently, I am enrolled in the Thomas J.
+          Watt School of Engineering at Binghamton University and will graduate
+          with a BS in Computer Science in 2026. I anticipate diving straight
+          into the tech industry after graduation as a software engineer for a
+          top company.
+        </p>
+        <div class="madeByEL">
+          <i style="font-size: 3rem" class="fa-solid fa-person-running"></i>
+          <p class="dateLine"></p>
+        </div>
+      </div>
+      <div class="projects" id="projects">
+        <div class="projectTitle">Projects</div>
+        <div class="projectDesc">Some Personal Stuff.</div>
+        <p class="dateLine"></p>
+        <div class="proj">
+          <h1 class="projTitle">JavaScript Calculator</h1>
+          <div class="everythingElse">
+            <div class="techUsed">
+              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <a
+              class="anchorClass"
+              href="https://hetyug04.github.io/JSCalc/Calculator/index.html"
+              target="_blank"
+            >
+              <img src="images/calculator.png" alt="" class="projImg" />
+            </a>
+            <p class="projDesc">
+              I made a simple calculator using JavaScript, HTML, and CSS. Its
+              functionaility includes basic mathematical operations and
+              sumations. I used this opportunity to practice intermediate to
+              advance JavaScript functionality and logic.
             </p>
-            <div class="madeByEL"><h2>Mar 22, 2023</h2><p class="dateLine"></p></div>
+          </div>
         </div>
-        <div class="about" id="about">
-            <div class="aboutTitle">About <i class="fa-solid fa-coffee"></i></div>
-            <div class="aboutTitleDesc">What It's All About.</div>
-            <p class="aboutIntro">First off, im a huge nerd. I love watching horror, sci-fi, playing video games, working out, and eating hot cheetos. But, more than anything,
-                 I love coding. Whether that be making websites like this one, video games, or impractical applications ill never actually use, its by far my favorite passtime.
-                  Its something I look forward to doing for a living in the future. Currently, I am enrolled in the Thomas J. Watt School of Engineering
-                 at Binghamton University and will graduate with a BS in Computer Science in 2026. I anticipate diving straight into the tech industry after graduation as a software engineer for a top company.
-           </p>
-           <div class="madeByEL"><i style="font-size: 3rem;"class="fa-solid fa-person-running"></i><p class="dateLine"></p></div>
+        <div class="proj">
+          <h1 class="projTitle">MWDW</h1>
+          <div class="everythingElse">
+            <div class="techUsed">
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <a
+              class="anchorClass"
+              href="https://mwdw.netlify.app/"
+              target="_blank"
+            >
+              <img src="images/mwdw.png" alt="" class="projImg" />
+            </a>
+            <p class="projDesc">
+              I made a weather app from scratch using ReactJS and the
+              OpenWeatherMap API. Its built on text to search operations,
+              conditional rendering, advanced use of FetchAPI and destructuring.
+              Its functionality includes most aspects of a 3-hour weather period
+              given a specific city. ReactRouter usage and advanced conditional
+              rendering along with more functionaility is planned for version 2.
+            </p>
+          </div>
         </div>
-        <div class="projects" id="projects">
-            <div class="projectTitle">Projects</div>
-            <div class="projectDesc">Some Personal Stuff.</div>
-            <p class="dateLine"></p>
-            <div class="proj">
-                <h1 class="projTitle">JavaScript Calculator</h1>
-                <div class="everythingElse">
-                    <div class="techUsed">
-                        <i class="fa-brands fa-square-js"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <a class="anchorClass" href="https://hetyug04.github.io/JSCalc/Calculator/index.html" target="_blank">
-                        <img src="images/calculator.png" alt="" class="projImg">
-                    </a>
-                    <p class="projDesc">I made a simple calculator using JavaScript, HTML, and CSS. Its functionaility includes basic mathematical operations and sumations. I used this opportunity to practice intermediate to advance JavaScript functionality and logic.</p>
-                </div>
+        <div class="proj">
+          <h1 class="projTitle">MWDIMS</h1>
+          <div class="everythingElse">
+            <div class="techUsed">
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
             </div>
-            <div class="proj">
-                <h1 class="projTitle">MWDW</h1>
-                <div class="everythingElse">
-                    <div class="techUsed">
-                        <i class="fa-brands fa-react"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <a class="anchorClass" href="https://mwdw.netlify.app/" target="_blank">
-                        <img src="images/mwdw.png" alt="" class="projImg">
-                    </a>
-                    <p class="projDesc">I made a weather app from scratch using ReactJS and the OpenWeatherMap API. Its built on text to search operations, conditional rendering, advanced use of FetchAPI and destructuring. Its functionality includes most aspects of a 3-hour weather period given a specific city. ReactRouter usage and advanced conditional rendering along with more functionaility is planned for version 2.</p>
-                </div>
-            </div>
-            <div class="proj">
-                <h1 class="projTitle">MWDIMS</h1>
-                <div class="everythingElse">
-                    <div class="techUsed">
-                        <i class="fa-brands fa-react"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </div>
-                    <a class="anchorClass" href="https://mwdims.netlify.app/" target="_blank">
-                        <img src="images/mwdims.png" alt="" class="projImg">
-                    </a>
-                    <p class="projDesc">I built an instant messaging app using Google Firebase, showcasing my expertise in the MERN stack and Google-based authentication. This app enables seamless sharing of messages and images, highlighting my self-directed ReactJS development skills with custom Google Authentication, user management, efficient data structure, and reliable image hosting.</p>
-                </div>
-            </div>
-           <h1 class="clientProj">For Clients</h1>
-           <p class="dateLine"></p>
-           <div class="proj">
-            <h1 class="projTitle">WisdomSquare Concept</h1>
-            <div class="everythingElse">
-                <div class="techUsed">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                </div>
-                <a class="anchorClass"href="https://hetyug04.github.io/JSCalc/Calculator/index.html" target="_blank">
-                    <img src="images/wsdmsqr.png" alt="" class="projImg">
-                </a>
-                <p class="projDesc">I practiced advanced CSS with this project along with design and a user-first interface. I made this website as a concept in supplement for WisdomSquare, an IT company who wished to rebrand their website</p>
-            </div>
+            <a
+              class="anchorClass"
+              href="https://mwdims.netlify.app/"
+              target="_blank"
+            >
+              <img src="images/mwdims.png" alt="" class="projImg" />
+            </a>
+            <p class="projDesc">
+              I built an instant messaging app using Google Firebase, showcasing
+              my expertise in the MERN stack and Google-based authentication.
+              This app enables seamless sharing of messages and images,
+              highlighting my self-directed ReactJS development skills with
+              custom Google Authentication, user management, efficient data
+              structure, and reliable image hosting.
+            </p>
+          </div>
         </div>
-    </div>
-   
+        <h1 class="clientProj">For Clients</h1>
+        <p class="dateLine"></p>
+        <div class="proj">
+          <h1 class="projTitle">WisdomSquare Concept</h1>
+          <div class="everythingElse">
+            <div class="techUsed">
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <a
+              class="anchorClass"
+              href="https://hetyug04.github.io/JSCalc/Calculator/index.html"
+              target="_blank"
+            >
+              <img src="images/wsdmsqr.png" alt="" class="projImg" />
+            </a>
+            <p class="projDesc">
+              I practiced advanced CSS with this project along with design and a
+              user-first interface. I made this website as a concept in
+              supplement for WisdomSquare, an IT company who wished to rebrand
+              their website
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="contact">
-        <div class="contactWrapper">
-            <div class="contactMe">
-                <h1>Contact Me!</h1>
-                <h4 class="contactItem">Het Patel</h4>
-                <h4 class="contactItem">hetyug04@gmail.com</h4>
-                <h4 class="contactItem">(929)-253-4130</h4>
-                <h4 class="contactItem">Queens, New York</h4>
-            </div>
-            <div class="contactLinks">
-                <h1>Helpful Links</h1>
-                <h4 class="contactLink">Resume</h4>
-                <h4 class="contactLink">GitHub</h4>
-            </div>
+      <div class="contactWrapper">
+        <div class="contactMe">
+          <h1 class="contactMeTitle">Contact Me!</h1>
+          <h4 class="contactItem">Het Patel</h4>
+          <h4 class="contactItem">hetyug04@gmail.com</h4>
+          <h4 class="contactItem">(929)-253-4130</h4>
+          <h4 class="contactItem">Queens, New York</h4>
         </div>
+        <div class="contactLinks">
+          <h1 class="linksTitle">Helpful Links</h1>
+          <h4 class="contactLink">Resume</h4>
+          <h4 class="contactLink">GitHub</h4>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
