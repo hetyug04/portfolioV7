@@ -292,15 +292,21 @@ body {
     width: 90%;
   }
   .contactMeTitle {
-    font-size: 1.3rem;
+    font-size: .3rem;
     margin-bottom: 0.5rem;
   }
   .contactItem {
     font-size: 1rem;
   }
   .contactMeTitle {
+    margin-top: .5rem;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
+  }
+  .linksTitle{
+    margin-top: .5rem;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
   }
   .contactLink {
     font-size: 1rem;
@@ -334,9 +340,8 @@ body {
   .projDesc {
     width: 80%;
     align-self: center;
-
     text-align: center;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 }
