@@ -116,6 +116,11 @@ body {
 .techUsed .fa-square-js:hover {
   color: #f0db4f;
 }
+.projImgContainer {
+  position: relative;
+  display: inline-block;
+}
+
 .projImg {
   filter: sepia(50%);
   margin-left: 1rem;
@@ -128,6 +133,15 @@ body {
   -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
 }
+
+.projImgContainer .projLinks {
+  position: absolute;
+  right: .5rem;
+  bottom: 0rem;
+  height: 3rem;
+  width: fit-content;
+}
+
 .projImg:hover {
   filter: sepia(0);
   -webkit-box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, 0.75);
@@ -138,6 +152,9 @@ body {
   margin-left: 1.9rem;
   color: #2c0085;
   font-weight: 700;
+}
+.projLink{
+  color: white;
 }
 .clientProj {
   margin-top: 3rem;
