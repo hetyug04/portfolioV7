@@ -43,18 +43,21 @@ body {
   height: auto;
 }
 .projects {
-  height: auto;
-  margin-bottom: 10rem;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
 }
 .projectTitle {
   font-weight: 900;
-  font-size: 8rem;
+  font-size: 10rem;
   padding-top: 5rem;
 }
 .projectDesc {
   font-weight: 800;
   color: white;
   font-size: 2.5rem;
+  width: 100%;
 }
 .dateLine {
   margin-top: 3rem;
@@ -63,17 +66,18 @@ body {
 }
 .proj {
   margin-top: 4rem;
-  width: 100%;
+  width: fit-content;
   display: flex;
   flex-direction: column;
 }
 .projTitle {
   margin-left: 4rem;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 .everythingElse {
   display: flex;
+  width: fit-content;
 }
 .techUsed {
   display: flex;
@@ -116,8 +120,8 @@ body {
   filter: sepia(50%);
   margin-left: 1rem;
   border-radius: 25px;
-  width: 600px;
-  height: 375px;
+  width: 400px;
+  height: 300px;
   object-fit: cover;
   transition: box-shadow 0.5s, filter 0.5s;
   -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
@@ -140,9 +144,25 @@ body {
   font-weight: 800;
   color: white;
   font-size: 2.5rem;
+  width: 100%;
+}
+.skills{
+  margin-bottom: 10rem;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skillContainer{
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+.skillTitle{
+  font-size: 3rem;
 }
 .about {
-  height: 100vh;
+  height: fit-content;
 }
 .aboutTitle {
   padding-top: 8rem;
@@ -237,9 +257,15 @@ body {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1015px) {
+  .projects{
+    justify-content: center;
+  }
   .navBar {
     width: 80%;
+  }
+  .about{
+    margin-top: 0;
   }
   .navEl {
     font-size: 1.5rem;
@@ -249,15 +275,15 @@ body {
     width: 90%;
   }
   .projectTitle {
-    font-size: 5.8rem;
+    font-size: 20vw;
   }
   .projTitle {
     margin: 0 auto;
   }
   .projImg {
     margin: 0 auto 1rem;
-    width: 375px;
-    height: 225px;
+    width: 100%;
+    height: 175px;
   }
   .projDesc {
     width: 90%;
@@ -265,7 +291,7 @@ body {
     font-size: 1rem;
   }
   .aboutTitle {
-    font-size: 6rem;
+    font-size: 28vw;
     margin-bottom: 1rem;
   }
   .aboutIntro {
@@ -275,9 +301,8 @@ body {
     height: 100vh;
   }
   .title {
-    margin-top: 6rem;
-    font-size: 6rem;
-    line-height: 80px;
+    margin-top: 10%;
+    font-size: 30vw;
   }
   .titleDesc {
     font-size: 2.25rem;
@@ -286,13 +311,13 @@ body {
     display: none;
   }
   .madeByEL {
-    margin-top: 10rem;
+    margin-top: 3rem;
   }
   .contactWrapper {
     width: 90%;
   }
   .contactMeTitle {
-    font-size: 1.3rem;
+    font-size: 30vw;
     margin-bottom: 0.5rem;
   }
   .contactItem {
@@ -310,6 +335,20 @@ body {
   }
   .contactLink {
     font-size: 1rem;
+  }
+  .skills{
+    margin-bottom: -4rem;
+    height: fit-content;
+  }
+  .skill{
+    margin-top: .3rem;
+    font-size: 1rem;
+  }
+  .skillTitle{
+    font-size: 1.5rem;
+  }
+  .proj{
+    margin-top: 1rem;
   }
 }
 @media screen and (max-width: 1630px) {
@@ -332,6 +371,7 @@ body {
   }
   .everythingElse {
     display: flex;
+    width: fit-content;
     flex-direction: column;
   }
   .anchorClass {
