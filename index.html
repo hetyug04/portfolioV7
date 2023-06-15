@@ -53,11 +53,40 @@
           <i style="font-size: 3rem" class="fa-solid fa-person-running"></i>
           <p class="dateLine"></p>
         </div>
+        <div class="skills">
+          <h1 style="font-size: 3rem; color: white">Skills</h1>
+          <div style="display: flex; justify-content: space-between">
+            <div class="skillContainer">
+              <h1 class="skillTitle">Front End</h1>
+              <li class="skill">HTML5 <i class="fa-brands fa-html5" z></i></li>
+              <li class="skill">CSS <i class="fa-brands fa-css3-alt"></i></li>
+              <li class="skill">ReactJS <i class="fa-brands fa-react"></i></li>
+              <li class="skill">SASS</li>
+            </div>
+            <div class="skillContainer">
+              <h1 class="skillTitle">Back End</h1>
+              <li class="skill">Firebase <i class="fa-solid fa-fire"></i></li>
+              <li class="skill">JavaScript <i class="fa-brands fa-js"></i></li>
+              <li class="skill">NodeJS <i class="fa-brands fa-node"></i></li>
+              <li class="skill">
+                ExpressJS <i class="fa-brands fa-node-js"></i>
+              </li>
+              <li class="skill">
+                MongoDB & Mongoose <i class="fa-solid fa-database"></i>
+              </li>
+            </div>
+            <div class="skillContainer">
+              <h1 class="skillTitle">Other</h1>
+              <li class="skill">JAVA <i class="fa-brands fa-java"></i></li>
+              <li class="skill">Python <i class="fa-brands fa-python"></i></li>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="projects" id="projects">
         <div class="projectTitle">Projects</div>
         <div class="projectDesc">Some Personal Stuff.</div>
-        <p class="dateLine"></p>
         <div class="proj">
           <h1 class="projTitle">JavaScript Calculator</h1>
           <div class="everythingElse">
@@ -71,14 +100,18 @@
               href="https://hetyug04.github.io/JSCalc/Calculator/index.html"
               target="_blank"
             >
-              <img src="images/calculator.png" alt="" class="projImg" />
+              <div class="projImgContainer">
+                <img src="images/calculator.png" alt="" class="projImg" />
+                <div class="projLinks">
+                  <a href="https://github.com/hetyug04/JSCalc"
+                    ><i
+                      class="projLink fa-brands fa-github"
+                      style="font-size: 2rem"
+                    ></i
+                  ></a>
+                </div>
+              </div>
             </a>
-            <p class="projDesc">
-              I made a simple calculator using JavaScript, HTML, and CSS. Its
-              functionaility includes basic mathematical operations and
-              sumations. I used this opportunity to practice intermediate to
-              advance JavaScript functionality and logic.
-            </p>
           </div>
         </div>
         <div class="proj">
@@ -94,16 +127,18 @@
               href="https://mwdw.netlify.app/"
               target="_blank"
             >
-              <img src="images/mwdw.png" alt="" class="projImg" />
+              <div class="projImgContainer">
+                <img src="images/mwdw.png" alt="" class="projImg" />
+                <div class="projLinks">
+                  <a href="https://github.com/hetyug04/mwdw"
+                    ><i
+                      class="projLink fa-brands fa-github"
+                      style="font-size: 2rem"
+                    ></i
+                  ></a>
+                </div>
+              </div>
             </a>
-            <p class="projDesc">
-              I made a weather app from scratch using ReactJS and the
-              OpenWeatherMap API. Its built on text to search operations,
-              conditional rendering, advanced use of FetchAPI and destructuring.
-              Its functionality includes most aspects of a 3-hour weather period
-              given a specific city. ReactRouter usage and advanced conditional
-              rendering along with more functionaility is planned for version 2.
-            </p>
           </div>
         </div>
         <div class="proj">
@@ -119,16 +154,45 @@
               href="https://mwdims.netlify.app/"
               target="_blank"
             >
-              <img src="images/mwdims.png" alt="" class="projImg" />
+              <div class="projImgContainer">
+                <img src="images/mwdims.png" alt="" class="projImg" />
+                <div class="projLinks">
+                  <a href="https://github.com/hetyug04/mwdims"
+                    ><i
+                      class="projLink fa-brands fa-github"
+                      style="font-size: 2rem"
+                    ></i
+                  ></a>
+                </div>
+              </div>
             </a>
-            <p class="projDesc">
-              I built an instant messaging app using Google Firebase, showcasing
-              my expertise in the MERN stack and Google-based authentication.
-              This app enables seamless sharing of messages and images,
-              highlighting my self-directed ReactJS development skills with
-              custom Google Authentication, user management, efficient data
-              structure, and reliable image hosting.
-            </p>
+          </div>
+        </div>
+        <div class="proj">
+          <h1 class="projTitle">Blogify</h1>
+          <div class="everythingElse">
+            <div class="techUsed">
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-html5"></i>
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <a
+              class="anchorClass"
+              href="https://blogify-wyp0.onrender.com/"
+              target="_blank"
+            >
+              <div class="projImgContainer">
+                <img src="images/blogify.png" alt="" class="projImg" />
+                <div class="projLinks">
+                  <a href="https://github.com/hetyug04/blogify"
+                    ><i
+                      class="projLink fa-brands fa-github"
+                      style="font-size: 2rem"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
         <h1 class="clientProj">For Clients</h1>
@@ -145,19 +209,15 @@
               href="https://hetyug04.github.io/JSCalc/Calculator/index.html"
               target="_blank"
             >
-              <img src="images/wsdmsqr.png" alt="" class="projImg" />
+              <div class="projImgContainer">
+                <img src="images/wsdmsqr.png" alt="" class="projImg" />
+              </div>
             </a>
-            <p class="projDesc">
-              I practiced advanced CSS with this project along with design and a
-              user-first interface. I made this website as a concept in
-              supplement for WisdomSquare, an IT company who wished to rebrand
-              their website
-            </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
       <div class="contactWrapper">
         <div class="contactMe">
           <h1 class="contactMeTitle">Contact Me!</h1>
